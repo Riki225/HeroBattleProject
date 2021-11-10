@@ -53,8 +53,7 @@
   <hr>
   <div *ngFor="let gamePlayed of gamesPlayed">
       <div class="row">
-          <div class="column gamePlayedCreated">{{gamePlayed.created | date:'short':'UTC +9:30 / +10:30' }}</div>
-          <div class="column gamePlayedWinnerName">{{gamePlayed.winnerName}} won</div>
+        <div class="column gamePlayedCreated">At {{gamePlayed.created | date:'short':'UTC +9:30 / +10:30' }} {{gamePlayed.winnerName}} Won </div>
       </div>
   </div>
 </div>
